@@ -4,12 +4,11 @@
 
 using namespace std;
 
-void parent(int v,int p[20]){
-     if(v==0)
+void parent(int vis,int p[20]){
+     if(vis==0)
         return;
-     parent(p[v],p);
-	//  cout<<p[v]<<"->";
-     printf(" %d->",p[v]);
+     parent(p[vis],p);
+     printf(" %d->",p[vis]);
      return;
 }
 
